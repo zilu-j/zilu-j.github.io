@@ -857,6 +857,60 @@ section,
   bottom: 0;
 }
 
+.portfolio.publications .portfolio-item {
+  position: static;
+  overflow: visible;
+}
+
+.portfolio.publications .publication-card {
+  background-color: var(--surface-color);
+  border-radius: 12px;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 80%);
+  padding: 24px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: all 0.25s ease;
+}
+
+.portfolio.publications .publication-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+}
+
+.portfolio.publications .publication-meta .pub-tag {
+  font-weight: 600;
+}
+
+.portfolio.publications .publication-card h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0;
+}
+
+.portfolio.publications .publication-card .pub-authors {
+  font-size: 0.95rem;
+  margin-bottom: 0;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+}
+
+.portfolio.publications .publication-card .pub-venue {
+  font-size: 0.9rem;
+  margin-bottom: 0;
+  color: color-mix(in srgb, var(--default-color), transparent 10%);
+}
+
+.portfolio.publications .publication-card:hover {
+  border-color: var(--accent-color);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+  transform: translateY(-4px);
+}
+
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
